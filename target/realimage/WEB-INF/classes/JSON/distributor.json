@@ -1,8 +1,8 @@
 {
 
 	"distributor1": {
-		"include": ["INDIA", "UNITEDSTATES"],
-		"exclude": ["KARNATAKA-INDIA", "CHENNAI-TAMILNADU-INDIA","HYDERABAD-TELANGANA-INDIA"],
+		"include": ["INDIA", "UNITED STATES"],
+		"exclude": ["KARNATAKA-INDIA", "CHENNAI-TAMIL NADU-INDIA","HYDERABAD-TELANGANA-INDIA"],
 		"parent": []
 	},
 
