@@ -25,7 +25,7 @@ app.controller('TabsCtrl', ['$scope','$http','$window',function ($scope,$http,$w
     	$scope.loading=true;
     	 $http({
              method: 'POST',
-             url: '/realimage.herokuapp.com/link',
+             url: '/link',
              data:  {distributor: $scope.complaint.title, region:$scope.complaint.comment},
              headers: {
                  'Content-Type': 'application/text',
