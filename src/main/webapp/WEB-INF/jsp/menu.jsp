@@ -15,8 +15,10 @@
 <script type="text/javascript"
 	src="<c:url value='/assets/bower_components/angular/angular-drag-and-drop-lists.min.js'/>"></script>
 <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.9.0/ui-bootstrap-tpls.min.js"></script>
- --><script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.1/js/material.min.js"></script>
-	
+ -->
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.1/js/material.min.js"></script>
+
 <script type="text/javascript"
 	src="<c:url value='/assets/scripts/app.js'/>"></script>
 
@@ -30,8 +32,9 @@
 	href="<c:url value='/assets/styles/mystyles.css'/>">
 <link rel="stylesheet" media="screen"
 	href="<c:url value='/assets/styles/simple.css'/>">
-	
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.1/css/material.min.css" />
+
+<link rel="stylesheet"
+	href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.1/css/material.min.css" />
 
 <style>
 .tabs_check {
@@ -49,7 +52,6 @@
 	color: #696969;
 	padding: 12px 56px;
 	margin-bottom: -1px;
-	
 }
 
 #mainView {
@@ -62,66 +64,60 @@
 .active {
 	background-color: #47bac1;
 	color: #fff;
-	border: 1px solid #47bac1 ;
+	border: 1px solid #47bac1;
 	border-bottom: none;
-	border-radius:4px;
-
+	border-radius: 4px;
 }
 
-#pointer_check td{
-   cursor: pointer; 
-   cursor: hand;
+#pointer_check td {
+	cursor: pointer;
+	cursor: hand;
 }
 
-.export_button{
-  color:#fff;
-  background-color:#45A4C0;
-  border-color:#000;
-  border-radius: 4px;
-  padding: 2px 14px;
+.export_button {
+	color: #fff;
+	background-color: #45A4C0;
+	border-color: #000;
+	border-radius: 4px;
+	padding: 2px 14px;
 }
 
-
-.form-control-wrapper{
-   border-color:#757575 !important;
+.form-control-wrapper {
+	border-color: #757575 !important;
 }
 
 body {
-    background-color: #fff;
+	background-color: #fff;
 }
 
-.material-input::after{
-   color: #009587 !important;
-
+.material-input::after {
+	color: #009587 !important;
 }
 
-.header_page{
-
-  box-sizing: border-box;
-    z-index: 99999;
-    overflow: hidden;
-    color: #ffffff;
-    width: 100%;
-    background-color:#1c324a;
-    height:80px;
-    top:0;
-    position:fixed;
-     left:0;
+.header_page {
+	box-sizing: border-box;
+	z-index: 99999;
+	overflow: hidden;
+	color: #ffffff;
+	width: 100%;
+	background-color: #1c324a;
+	height: 80px;
+	top: 0;
+	position: fixed;
+	left: 0;
 }
 
-
-.footer_page{
-
-  box-sizing: border-box;
-    z-index: 99999;
-    overflow: hidden;
-    color: #ffffff;
-    width: 100%;
-    background-color: #1c324a;
-    height:60px;
-    bottom:0;
-    position:fixed;
-     left:0;
+.footer_page {
+	box-sizing: border-box;
+	z-index: 99999;
+	overflow: hidden;
+	color: #ffffff;
+	width: 100%;
+	background-color: #1c324a;
+	height: 60px;
+	bottom: 0;
+	position: fixed;
+	left: 0;
 }
 
 .loading {
@@ -136,35 +132,49 @@ body {
 	filter: alpha(opacity = 50);
 }
 
-.footercontainer{
-width: 960px;
-    margin: 0 auto;
-    float: left;
-    padding-left:90px;
-    padding-top:18px;
-    font-size:11px;
+.footercontainer {
+	width: 960px;
+	margin: 0 auto;
+	float: left;
+	padding-left: 90px;
+	padding-top: 18px;
+	font-size: 11px;
 }
 
-.container{
-	margin-top : 50px;
+.container {
+	margin-top: 50px;
 }
 
+.isa_success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	margin: 10px 64px;
+	padding: 10px;
+	vertical-align: middle;
+}
 
-
+.isa_warning {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	margin: 10px 64px;
+	padding: 10px;
+	vertical-align: middle;
+}
 </style>
 
 </head>
 <body>
-				<!-- <a ng-href="login" style="margin-left:1068px;text-decoration:none;" class="export_button">Logout</a -->
-				 <div class="header_page">
+	<!-- <a ng-href="login" style="margin-left:1068px;text-decoration:none;" class="export_button">Logout</a -->
+	<div class="header_page">
 
-		<div class="left" style="margin-left: 44px; margin-top: 9px;margin-left:20px;">
+		<div class="left"
+			style="margin-left: 44px; margin-top: 9px; margin-left: 20px;">
 			<div class="col-xs-2">
 				<div class="col-xs-1">
 					<a href="welcome" style="text-decoration: none; color: inherit;"><i
 						class="fa fa-home fa-3x" aria-hidden="true"></i></a>
 				</div>
-				<div class="col-xs-1 col-xs-offset-1" >
+				<div class="col-xs-1 col-xs-offset-1">
 					<img class="rsysLogo" src="assets/images/real_image_logo.gif"
 						width="135px">
 				</div>
@@ -172,81 +182,99 @@ width: 960px;
 		</div>
 	</div>
 
-		
+
 	<div class="container">
-		<div class="row">
-		</div>
+		<div class="row"></div>
 		<div ng-controller="TabsCtrl">
-         <div class="row" id="viewOne" style="margin-top:50px;margin-left:50px;">
-			<div class="col-xs-12 col-sm-9">
-				<form class="form-horizontal" name="complaintForm"
-					ng-submit="toggle(complaintForm)" enctype="multipart/form-data" novalidate>
-					<div class="form-group" 
-						ng-class="{ 'has-error' : complaintForm.title.$error.required && !complaintForm.title.$pristine }" style="margin-bottom:30px;">						
-                           <label>Distributor</label>
-                           <div class="form-control-wrapper">
-							<!-- <input type="text" class="form-control" id="title"
+			<div class="row" id="viewOne"
+				style="margin-top: 50px; margin-left: 50px;">
+				<div class="col-xs-12 col-sm-9">
+					<form class="form-horizontal" name="complaintForm"
+						ng-submit="toggle(complaintForm)" enctype="multipart/form-data"
+						novalidate>
+						<div class="form-group"
+							ng-class="{ 'has-error' : complaintForm.title.$error.required && !complaintForm.title.$pristine }"
+							style="margin-bottom: 30px;">
+							<label>Distributor</label>
+							<div class="form-control-wrapper">
+								<!-- <input type="text" class="form-control" id="title"
 								name="title" placeholder="Enter distributor's name or number"
 								ng-model="complaint.title" required> -->
-							<select class="form-control" id="title"
-								name="title" placeholder="Enter distributor's name or number"
-								ng-model="complaint.title" required>
-                            <c:forEach items="${dropdownList}" var="item">
-                            <option value="${item}">${item}</option>
-                            </c:forEach>
-                            </select>		 
-                              <small
-								ng-show="complaintForm.title.$error.required && !complaintForm.title.$pristine"
-								class="help-block">Distributor required.</small>
+								<select class="form-control" id="title" name="title"
+									placeholder="Enter distributor's name or number"
+									ng-model="complaint.title" required>
+									<c:forEach items="${dropdownList}" var="item">
+										<option value="${item}">${item}</option>
+									</c:forEach>
+								</select> <small
+									ng-show="complaintForm.title.$error.required && !complaintForm.title.$pristine"
+									class="help-block">Distributor required.</small>
+							</div>
 						</div>
-					</div>
-					<div class="form-group"
-						ng-class="{ 'has-error' : complaintForm.comment.$error.required && !complaintForm.comment.$pristine }">
-						<label>Region</label>
-                         <div class="form-control-wrapper">                       
-							<input type="text" class="form-control" id="comment"
-								name="comment" placeholder="Enter the region"
-								ng-model="complaint.comment"  required>  
-								
-								
-							<%-- <select class="form-control" id="comment"
+						<div class="form-group"
+							ng-class="{ 'has-error' : complaintForm.comment.$error.required && !complaintForm.comment.$pristine }">
+							<label>Region</label>
+							<div class="form-control-wrapper">
+								<input type="text" class="form-control" id="comment"
+									name="comment" placeholder="Enter the region"
+									ng-model="complaint.comment" required>
+
+
+								<%-- <select class="form-control" id="comment"
 								name="comment" placeholder="Select the region"
 								ng-model="complaint.comment" required>
                             <c:forEach items="${dropdownList}" var="item">
                             <option value="${item}">${item}</option>
                             </c:forEach>
                             </select>	 --%>
-                            	
-                             <small
-								ng-show="complaintForm.comment.$error.required && !complaintForm.comment.$pristine"
-								class="help-block">Region required.</small>
-						   </div>
-					</div>
-					
-					
-                    
-			       <div class="loading" ng-show="loading"><div style="margin-left:500px;margin-top:250px;"><img src="assets/images/31.gif"><b>&nbsp;&nbsp;Sending your message</b>
-                                               </div></div> 
-                        
-                   <button type="submit" ng-disabled="complaintForm.$invalid"  class="btn" style="background-color: #47bac1 !important;color:#fff;margin-left:-15px;">Check</button>
-                       		
-					
-				</form>
-				<div>
-					<span ng-model="output">{{output}}</span>
-					</div>
+
+								<small
+									ng-show="complaintForm.comment.$error.required && !complaintForm.comment.$pristine"
+									class="help-block">Region required.</small>
+							</div>
+						</div>
+
+
+
+						<div class="loading" ng-show="loading">
+							<div style="margin-left: 500px; margin-top: 250px;">
+								<img src="assets/images/31.gif"><b>&nbsp;&nbsp;Sending
+									your message</b>
+							</div>
+						</div>
+
+						<button type="submit" ng-disabled="complaintForm.$invalid"
+							class="btn"
+							style="background-color: #47bac1 !important; color: #fff; margin-left: -15px;">Check</button>
+
+
+					</form>
+
+				</div>
 			</div>
-		</div>		
+			<div class="row">
+				<div class="isa_success col-xs-12 col-sm-3" ng-show="success">
+					<i class="fa fa-check"></i> <strong>Yes! </strong>Can distribute in
+					the region
+				</div>
+
+				<div class="isa_warning col-xs-12 col-sm-3" ng-show="warning">
+					<i class="fa fa-warning"></i> <strong>No! </strong>Cannot distribute in
+					the region
+				</div>
+
+				<!-- <span ng-model="output">{{output}}</span> -->
+			</div>
 
 		</div>
 	</div>
 	<div class="footer_page">
-				
-						<div class="footercontainer">
-                       <p>© Real Image, 2017. All rights reserved.</p>
-                     </div>
-					
-				</div> 
+
+		<div class="footercontainer">
+			<p>© Real Image, 2017. All rights reserved.</p>
+		</div>
+
+	</div>
 
 </body>
 

@@ -3,6 +3,8 @@ var app = angular.module('myApp', []);
 app.controller('TabsCtrl', ['$scope','$http','$window',function ($scope,$http,$window) {
 	
     $scope.complaint = {title:"", comment:""};
+    $scope.success=false;
+    $scope.warning=false;
     /*$scope.items=[];
    // $scope.items = ["Apple", "Banana", "Orange"];
     $scope.init = function (name) {
@@ -21,7 +23,9 @@ app.controller('TabsCtrl', ['$scope','$http','$window',function ($scope,$http,$w
    // $scope.loading=false;
     $scope.toggle = function (complaintForm) {
     	//console.log($scope.complaint.title+" "+$scope.complaint.comment);
-    	 
+    	$scope.success=false;
+        $scope.warning=false;
+        
     	$scope.loading=true;
     	 $http({
              method: 'POST',
@@ -39,7 +43,12 @@ app.controller('TabsCtrl', ['$scope','$http','$window',function ($scope,$http,$w
         	 if(angular.equals(data,"invalid"))
           		alert("invalid region");
         	 else
-        	    $scope.output=data;
+        	    {
+        		 if(angular.equals(data,"yes"))
+        		    $scope.success=true;
+        		 else
+        			 $scope.warning=true;
+        	    }
         	 
         	complaintForm.$setPristine();
         	$scope.complaint.title="";

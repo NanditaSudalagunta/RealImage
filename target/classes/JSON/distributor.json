@@ -12,6 +12,27 @@
 		"parent": ["distributor1"]
 
 	}
+	,
+	
+    "distributor3": {
+		"include": ["PUNJAB-INDIA","UNITEDSTATES"],
+		"exclude": ["SAMRALA-PUNJAB-INDIA"],
+		"parent": ["distributor2"]
 
+	},
+	
+	"distributor4":{
+	   "include": ["CHINA"],
+		"exclude": ["WESTBENGAL-INDIA"],
+		"parent": []	
+	
+	}
+	,
+	"distributor5":{
+	   "include": ["alabama-UNITEDSTATES"],
+		"exclude": ["PUNJAB-INDIA"],
+		"parent": ["distributor3"]	
+	
+	}
 
 }
